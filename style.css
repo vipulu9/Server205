@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark gaming background */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f1c40f; /* Gold accent */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-highlight {
+    background-color: #f1c40f;
+    color: #121212 !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://wallpaperaccess.com/full/2119875.jpg'); /* Replace with a game screenshot */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.btn-main {
+    display: inline-block;
+    background-color: #e74c3c; /* Aggressive red button */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-main:hover {
+    background-color: #c0392b;
+}
+
+/* Sections */
+.container {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #f1c40f;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Grids */
+.stats-grid, .alliance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.stat-card, .alliance-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.stat-card i {
+    font-size: 3rem;
+    color: #f1c40f;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+.form-section {
+    background-color: #1a1a1a;
+    padding: 60px 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}

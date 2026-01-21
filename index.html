@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server 205 Migration | Recruitment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SERVER 205</div>
+        <ul class="nav-links">
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#alliances">Alliances</a></li>
+            <li><a href="#apply" class="btn-highlight">Apply Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>DOMINATE WITH SERVER 205</h1>
+            <p>Unified. Organized. Victorious. The migration phase is open.</p>
+            <a href="#apply" class="btn-main">Join the Powerhouse</a>
+        </div>
+    </header>
+
+    <section id="stats" class="container">
+        <h2>Why Choose 205?</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-handshake"></i>
+                <h3>NAP 12</h3>
+                <p>Strict Non-Aggression Pact. We fight enemies, not each other.</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Glory Wars Winners</h3>
+                <p>Undefeated in Season 2 Glory Wars. We dominate the battlefield.</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-globe"></i>
+                <h3>International</h3>
+                <p>24/7 Activity. English, Korean, and European alliances.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="alliances" class="container">
+        <h2>Top Alliances</h2>
+        <div class="alliance-grid">
+            <div class="alliance-card">
+                <h3>[TOP1] XTR</h3>
+                <p>Power: 15B | Language: English</p>
+                <p>The main fighting force of 205. Whales welcome.</p>
+            </div>
+            <div class="alliance-card">
+                <h3>[TOP2] SFS</h3>
+                <p>Power: 14B | Language: All</p>
+                <p>Tactical masters. Focused on SvS strategy.</p>
+            </div>
+            <div class="alliance-card">
+                <h3>[TOP3] DSQ</h3>
+                <p>Power: 13B | Language: English</p>
+                <p>Growth focused. Perfect for active F2P/Low spenders.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply" class="form-section">
+        <div class="container">
+            <h2>Apply for Migration</h2>
+            <p>Only HQ 27+ and 20M+ Power.</p>
+            
+            <form id="migrationForm" action="https://formspree.io/f/xreejgza" method="POST">
+                <div class="form-group">
+                    <label>In-Game Name</label>
+                    <input type="text" name="ign" required>
+                </div>
+                <div class="form-group">
+                    <label>Current Server</label>
+                    <input type="number" name="server" required>
+                </div>
+                <div class="form-group">
+                    <label>HQ Level</label>
+                    <select name="hq_level">
+                        <option value="30">HQ 22-26</option>
+                        <option value="31">HQ 27-30</option>
+                        <option value="32">HQ 31-35</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Do you have T10 Troops?</label>
+                    <select name="t10">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-main">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Server 205 Recruitment Team. Not affiliated with the game developers.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
